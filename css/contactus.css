@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+/* 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+} */
+
+
+.contact-wrapper{
+  /* position: relative;
+  top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%,-50%); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  
+  
+}
+.contact-card{
+    width: 100%;
+    background: var(--text-color1);/*changes*/
+    align-self: center;
+    max-width: 350px;
+    padding: 5px 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 2px var(--foreground2); 
+/*   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center; */
+}
+
+.contact-card h2{
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--background);/*changes*/
+  font-size: 30px;
+  font-weight: 900;
+  margin-left: .4em;
+  
+/*   color: var(--text-color1);changes
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  width:100%; */
+}
+
+.contact-wrapper .input_field{
+  margin-bottom: 10px;
+  color: var(--text-color2);/*changes*/
+  background: var(--foreground);/*changes*/
+  outline: none;
+  border: 0;
+  border-bottom: 2px none var(--text-color1);/*changes*/
+  box-sizing: border-box;
+}
+
+.contact-wrapper .input_field input[type="text"],
+.contact-wrapper textarea{
+  /* border: 1px solid #e0e0e0; */
+  width: 100%;
+  padding: 10px;
+  color: var(--text-color5);/*changes*/
+  background: var(--foreground);/*changes*/
+  outline: none;
+    border-bottom: 2px solid var(--text-color1);/*changes*/
+}
+
+.contact-wrapper textarea{
+  resize: none;
+  height: 80px;
+  color: var(--text-color5);/*changes*/
+  background: var(--foreground);/*changes*/
+  outline: none;
+    border-bottom: 2px solid var(--text-color1);/*changes*/
+}
+
+.contact-wrapper .btn input[type="submit"]{
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: var(--background);/*changes*/
+  color: var(--text-color3);/*changes*/
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  outline: none;
+}
+
+#error_message{
+  margin-bottom: 20px;
+  background: var(--text-color3);
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
+#contact-us #contact-form-link p{
+	font-family:"Josefin Sans";
+	font-size: 2rem;
+}
+#contact-us #contact-form-link p i{
+	margin-right: 5px;
+}
+#contact-form-link:hover p{
+	color: #f44;
+}
