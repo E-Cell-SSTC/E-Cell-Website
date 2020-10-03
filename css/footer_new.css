@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@300;600&display=swap');
+footer{
+    background: #444;
+    width: 100%;
+    color: #eeeeee;
+    z-index: 1000;
+  }
+  
+  .footer-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+  .left-col{
+    margin-left: 35px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .logo-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  .left-col .content{
+    margin: 10px 0;
+  }
+  .left-col .content .logo-name{
+    font-size: 1.3rem;
+    font-family: 'Josefin Sans', Courier, monospace;
+    font-weight: 500;
+  }
+  .left-col .content .logo-name .ecell{
+    font-family: 'Montserrat', Courier, monospace;
+    font-weight: 600;
+  }
+  
+  .left-col .content .address{
+    padding: 10px 0;
+    font-family: 'Montserrat', Courier, monospace;
+    font-weight: 300;
+  }
+  .logo{
+    width: 80px;
+  }
+  .contact-link a{
+   margin: 20px;
+    color: #eee;
+    font-size: 1rem;
+  }
+  .address a{
+    color: #eee;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  .social-media{
+    width: 100%;
+    text-align: center;
+    margin: 7px 0;
+  }
+  
+  .social-media a{
+    color: #fff;
+    margin-right: 25px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: .3s linear;
+  }
+  
+  .social-media a:hover{
+    color: #f44;
+  }
+ .right-col{
+   width: 40vw;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+  .right-col h2{
+      margin: 10px;
+    font-size: 26px;
+    width: 100%;
+    align-self: flex-start;
+    font-family: 'Josefin Sans', Courier, monospace;
+    font-weight: 500;
+	text-align:center;
+  }
+  .right-col p{
+    width: fit-content;
+    align-self: center;
+    font-family: 'Montserrat', Courier, monospace;
+    font-family: 300;
+    margin: 10px;
+    font-size: 1rem;
+  }
+  
+  .border{
+    width: 100px;
+    height: 4px;
+    background: #fc5c65;
+  }
+  
+  .newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .txtb{
+    height: 40px;
+    font-size: 16px;
+    color: #293043;
+    background: rgb(238, 238, 238);
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    padding: 0 20px;
+  }
+  
+  .btn{
+    height: 40px;
+    font-size: 16px;
+    color: #f1f1f1;
+    background: #fc5c65;
+    border: none;
+    font-weight: 700;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: opacity .3s linear;
+    margin: 10px;
+    padding: 0 20px;
+  }
+  
+  .btn:hover{
+    opacity: .7;
+  }
+ .middle-col .nav-list{
+     list-style-type: none;
+     padding: 0;
+ }
+ .middle-col{
+   width: 30vw;
+   text-align: center;
+   margin-top: 0;
+   padding-top: 15px;
+ }
+ .middle-col a{
+     display: block;
+     text-decoration: none;
+     color: #eee;
+     font-size: 1.1rem;
+     font-family: 'Josefin Sans', Courier, monospace;
+     margin: 15px 0; 
+ }
+ .middle-col a:hover span{
+   background-color: rgba(255,255,255,0.1);
+   width: max-content;
+   padding: 3%;
+ }
+ .middle-col p{
+	 margin-top:0;
+   font-size: 1.5rem;
+   font-family: 'Montserrat', Courier, monospace;
+   font-weight: 600;
+ }
+
+.footer-bottom{
+  text-align: center;
+  width: 100%;
+  background: #383838;
+  color: #808080;
+  font-size: 1.1rem;
+}
+.footer-bottom p{
+	margin:0;
+}
+.footer-bottom p a{
+    color: #808080;
+    text-decoration: none;
+}
+.footer-bottom p:hover a{
+    color: #f44;
+}
+#contact-us p{
+	color: #fff;
+}
+#contact-us #contact-form-link p{
+	font-family:"Josefin Sans";
+	font-size: 2rem;
+	
+}
+#contact-form-link{
+	text-decoration:none;
+}
+#contact-us #contact-form-link p i{
+	margin-right: 5px;
+}
+#contact-us:hover p {
+	color: #f44;
+}
+  
+  @media screen and (max-width:960px) {
+   
+    .right-col{
+      width: 100%; 
+    }
+    .middle-col{
+      width: 100%;
+    }
+    .left-col{
+      width: 100%;
+      
+    }
+  }
+  
+  
+  @media screen and (max-width:700px){
+    .logo-content{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-container{
+      flex-wrap: wrap-reverse;
+    }
+    .left-col{
+      text-align: center;
+	  align-items:center;
+	  margin-left:0;
+    }
+      .left-col .logo-name{
+        font-size: 25px;
+      }
+  }
+  

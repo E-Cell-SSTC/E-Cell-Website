@@ -1,0 +1,84 @@
+
+.side-menu{
+	width: 16em;
+	height: auto;
+	margin: 4em auto 0;
+	font-size: 1em;
+	line-height: 2em;
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+/*	text-decoration: none;
+	border: none;*/
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -13em;
+	z-index: 1000000;
+}
+ul{
+	list-style: none;
+}
+li{
+	display: block;
+	background: #333;
+	height: 4em;
+	padding: 1em 1.5em;
+	position: relative;
+	transition: transform .5s,background-color .5s ,color 0.5s;
+}
+li:nth-child(1){
+	background:transparent ;
+}
+li:nth-child(2){
+	background:transparent ;
+}
+li:nth-child(3){
+	background:transparent ;
+}
+li:nth-child(4){
+	background:transparent ;
+}
+li:nth-child(5){
+	background:transparent ;
+}
+li:nth-child(6){
+	background:transparent ;
+}
+li:nth-child(7){
+	background:transparent ;
+}
+li:nth-child(8){
+	background:transparent ;
+}
+li:hover{
+	background:rgb(10, 81, 148);
+    transform: translateX(10em);
+    transition: .5s ease-in;
+}
+.side-menu ul li a{
+	/* display: block; */
+	color: white;
+	text-decoration: none;
+}
+.side-menu ul li button{
+	outline: none;
+	background: transparent;
+	border: none;
+	color: inherit;
+	font-size: 1em;
+	
+}
+.side-span{
+	display: block;
+	position: absolute;
+	font-size: 1.222222222222222em;
+	line-height: 2em;
+	height: 2em;
+	top: 0;
+	bottom: 0;
+	margin: -5px 2px;
+	padding: 1em 1.5em;
+	right: -1em;
+
+}

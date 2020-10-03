@@ -1,0 +1,240 @@
+body{
+  background-color: var(--background);/*changes*/
+  margin:0;
+}
+
+.section-head {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  overflow: hidden;
+}
+.section-head::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--foreground2);
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleX(1.5);
+}
+.section-head::after {
+  box-shadow: -6px -6px 25px 0;
+}
+.section-head .content {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+.section-head .content h1 {
+  margin: 0;
+  padding: 0;
+  background-color: var(--text-color1);/*changes*/
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 5em;
+}
+.section-head .content cite{
+  color: var(--text-color4);
+}
+.section-head .content p {
+  color: var(--text-color2);/*changes*/
+  font-size: 1.2em;
+}
+.faculty{
+  padding-top: 1em;
+}
+/* team heading */
+.team-heading {
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Recursive", sans-serif;
+  font-size: 2em;
+  color: var(--text-color1);/*changes*/
+  text-shadow: 5.5px 5.5px rgb(0, 0, 0);
+}
+  .row{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .our-team {
+    padding: 30px 0 40px;
+    margin: 30px;
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    /*background: linear-gradient(90deg,rgb(142, 141, 141),rgb(234, 234, 234),rgb(142, 141, 141));
+    */
+	background: var(--background);
+	text-align: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 20px 0 rgb(0, 0, 0),
+    -3px -3px 20px 0 rgb(0, 0, 0);
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) .5s;
+    border-radius: 5%;
+  }
+
+  .our-team:hover{
+    transform: scale(1.08);
+  }
+  /* Only for Dhirendra and Khushboo's Card */
+  .big-name{
+    padding: 30px 0 40px;
+    margin: 30px;
+    max-width: 250px;
+    max-height: 250px;
+    /*background: linear-gradient(90deg,rgb(142, 141, 141),rgb(234, 234, 234),rgb(142, 141, 141));
+    */
+	background: var(--background);
+	text-align: center;
+    overflow: hidden;
+    position: relative;
+    box-shadow: -3px -3px 20px 0 rgb(0, 0, 0),
+    -3px -3px 20px 0 rgb(0, 0, 0);
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) .5s;
+  }
+
+  .name{
+    font-size: 1.38em;
+    color: var(--text-color2);
+  }
+
+  .team-content{
+    margin-top: -3em;
+  }
+  .our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    margin-bottom: 50px;
+    z-index: 1;
+    position: relative;
+  }
+  
+  .our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: var(--graphic-color1);
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+  }
+  
+  .our-team:hover .picture::before {
+    height: 100%;
+  }
+  
+  .our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--graphic-color1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .our-team .picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+  }
+  
+  .our-team:hover .picture img {
+    box-shadow: 0 0 0 14px var(--text-color1);
+    transform: scale(0.7);
+  }
+  
+  .our-team .tenure {
+    display: block;
+    font-size: 1.05em;
+    color: var(--text-color2);
+    text-transform: capitalize;
+  }
+
+  .big-tenure{
+  margin-top: -.7em;
+  }
+  .our-team .social {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: var(--graphic-color1);
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .our-team:hover .social {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .space{
+    opacity: 0;
+    font-size: 30px;
+  }
+  
+  .our-team .social li {
+    display: inline-block;
+  }
+  .space{
+    opacity: 0;
+  }
+  .our-team .social li a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+  }
+  
+  .our-team .social li a:hover {
+    color: var(--graphic-color1);
+    background-color: #f7f5ec;
+  }
+
+  /* MOBILE VIEW */
+@media only screen and (max-width: 600px){
+  .section-head {
+  height: 50vh;
+}
+.section-head .content h1 {
+  font-size: 3.5em;
+}
+.section-head .content p {
+  color: var(--text-color2);
+  font-size: 1em;
+}
+.team-heading {
+  font-size: 1.4em;
+}
+}
