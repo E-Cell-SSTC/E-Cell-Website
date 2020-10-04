@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+body{
+  background-color: #004aad;/*changes*/
+  margin:0;
+  font-family: 'Oswald', sans-serif;
+}
+/* campus ambassador code starts here  */
+
+.whole-content{
+    margin-left: 50px;
+    color: white;
+}
+.top{
+    margin-top: -40px;
+    /* padding-top: -10px; */
+    font-size: 129px;
+    color: #004aad;
+    text-decoration: underline;
+}
+.underline{
+      border-bottom: 5px solid currentColor;
+  display: inline-block;
+  line-height: 1.1;
+}
+.quarter-circle-top-right div{
+    line-height: 80px;
+}
+.quarter-circle-top-right a{
+    text-decoration: none;
+}
+.quarter-circle-top-right .register-background{
+    border-radius: 10px;
+    background: #004aad;
+    padding: 7px;
+}
+.quarter-circle-top-right img{
+    padding-left: 68%;
+}
+.quarter-circle-top-right h2{
+    margin-top: -40px;
+    padding-left: 66%;
+    font-size: 40px;
+    color: white;
+}
+
+.quarter-circle-top-right{
+    padding-top: 7%;
+     padding-left: 15%;
+     width: auto;
+     height: 540px;
+     background: blue;
+     border-radius: 0 0 100px;
+     -moz-border-radius: 0 0 0 50%;
+     -webkit-border-radius: 0 0 0 100%;
+     background-color: white;
+}
+.perks ul{
+    list-style-type: none;
+    line-height: 55px;
+}
+.circle{
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: -35px;
+  margin-right: 10px;
+}
+.inline{
+    display: flex;
+}
+.about-prog-duties .underline{
+    border-bottom: 3.5px solid white;
+    padding: 0 0 2px;
+}
+.perks .underline{
+    border-bottom: 3.5px solid white;
+    padding: 0 0 2px;
+}
+
+#scroll{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+#camp-amb{
+    text-decoration: underline;
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+}
+
+/* Campus Ambassador code ends here */
