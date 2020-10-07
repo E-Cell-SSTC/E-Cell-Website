@@ -9,38 +9,44 @@ body{
 /* campus ambassador code starts here  */
 
 .whole-content{
-    margin-left: 50px;
+    margin-left: 3rem;
     color: white;
 }
 .top{
-    margin-top: -40px;
+    margin-top: -3rem;
     /* padding-top: -10px; */
-    font-size: 129px;
+    font-size: 8rem;
     color: #004aad;
     text-decoration: underline;
 }
 .underline{
-      border-bottom: 5px solid currentColor;
-  display: inline-block;
-  line-height: 1.1;
+    border-bottom: 5px solid currentColor;
+    display: inline-block;
+    line-height: 1.1;
 }
 .quarter-circle-top-right div{
-    line-height: 80px;
+    line-height: 4rem;
 }
 .quarter-circle-top-right a{
     text-decoration: none;
 }
 .quarter-circle-top-right .register-background{
-    border-radius: 10px;
+    border-radius: 1rem;
     background: #004aad;
     padding: 7px;
 }
-.quarter-circle-top-right img{
-    padding-left: 68%;
+.register-background_2{
+    border-radius: 1rem;
+    background: white;
+    color: #004aad;
+    padding: 7px;    
 }
+/* .quarter-circle-top-right img{
+    padding-left: 68%;
+} */
 .quarter-circle-top-right h2{
-    margin-top: -40px;
-    padding-left: 66%;
+    margin-top: -2.8rem;
+    padding-left: 50rem;
     font-size: 40px;
     color: white;
 }
@@ -50,7 +56,7 @@ body{
      padding-left: 15%;
      width: auto;
      height: 540px;
-     background: blue;
+     background: #004aad;
      border-radius: 0 0 100px;
      -moz-border-radius: 0 0 0 50%;
      -webkit-border-radius: 0 0 0 100%;
@@ -61,8 +67,8 @@ body{
     line-height: 55px;
 }
 .circle{
-  height: 50px;
-  width: 50px;
+  height: 3.2rem;
+  width: 3.2rem;
   background-color: white;
   border-radius: 50%;
   margin-left: -35px;
@@ -85,10 +91,75 @@ body{
     scroll-behavior: smooth;
 }
 #camp-amb{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     text-align: center;
     color: white;
-    padding-top: 10px;
+    padding-top: 1rem;
+    text-align: center;
+}
+#camp-amb h2{
+    font-size: 3rem;
+}
+#camp-amb a{
+    text-decoration: none;
+}
+
+
+
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 600px){
+    .whole-content{
+    margin-left: 1rem;
+    color: white;
+    font-size: .5rem;
+}
+.top{
+    margin-top: -2rem;
+    /* padding-top: -10px; */
+    font-size: 2.3rem;
+    color: #004aad;
+    text-decoration: underline;
+}
+.circle{
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  /* margin-left: -4rem; */
+  margin-top: 2em;
+}
+.quarter-circle-top-right{
+    padding-top: 7%;
+    padding-left: 15%;
+    max-width: auto;
+    width: auto;
+    height: 10rem;
+    background: #004aad;
+    border-radius: 0 0 100px;
+    -moz-border-radius: 0 0 0 50%;
+    -webkit-border-radius: 0 0 0 100%;
+    background-color: white;
+}
+.quarter-circle-top-right h2{
+    margin-top: -2.8rem;
+    padding-left: 13.5rem;
+    font-size: .8rem;
+    color: white;
+}
+.quarter-circle-top-right .register-background{
+    border-radius: .6rem;
+    background: #004aad;
+    padding: 7px;
+}
+.quarter-circle-top-right div{
+    line-height: 5rem;
+}
+
+#camp-amb h2{
+    font-size: 1rem;
+}
 }
 
 /* Campus Ambassador code ends here */
