@@ -157,6 +157,13 @@ body{
     line-height: 5rem;
 }
 
+.perks ul{
+    list-style-type: none;
+    line-height: 30px;
+}
+.perk-about{
+    margin-top: 13px;
+}
 #camp-amb h2{
     font-size: 1rem;
 }
