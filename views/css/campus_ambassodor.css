@@ -103,6 +103,20 @@ body{
 #camp-amb a{
     text-decoration: none;
 }
+.ca-logo{
+    height: 4em;
+    width: auto;
+    margin-left: -40px;
+    margin-right: 20px;
+}
+.big-img{
+    height: 5em;
+    width: auto;
+}
+
+.perk-about .space{
+    opacity: 0;
+}
 
 
 
@@ -162,7 +176,7 @@ body{
     line-height: 30px;
 }
 .perk-about{
-    margin-top: 13px;
+    margin-top: .1em;
 }
 #camp-amb h2{
     font-size: 1rem;
