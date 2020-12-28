@@ -5,6 +5,8 @@ const morgan = require('morgan');
 const methodOverride = require('method-override')
 const bodyParser = require('body-parser');
 
+require('dotenv').config();
+
 
 const app = express();
 app.use(morgan('dev'));
@@ -48,6 +50,5 @@ app.get('/campus-ambassador', async (req, res) => {
 
 app.use('/', router);
 app.listen(process.env.port || 3000);
-
-console.log(` Server Running at PORT ${process.env.port}`);
+console.log(`Server Running at PORT ${process.env.port}`);
 
