@@ -1,0 +1,168 @@
+.accom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .wrapper {
+    width: 100%;
+    max-width: 300px;
+    height: 80vh;
+    max-height: 500px;
+    background: var(--foreground); /*changes*/
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow 0.5s, transform 0.5s;
+  }
+  .wrapper:hover {
+    transform: scale(1);
+    box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+  }
+  .wrapper .container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .wrapper .inside {
+    z-index: 9;
+    background: var(--text-color3); /*changes*/
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -70px;
+    right: -70px;
+    border-radius: 0px 0px 200px 200px;
+    transition: all 0.5s, border-radius 2s, top 1s;
+    overflow: hidden;
+  }
+  .icon {
+    position: absolute;
+    right: 80px;
+    top: 85px;
+    color: white;
+    opacity: 1;
+  }
+  
+  .wrapper .inside:hover {
+    width: 100%;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    height: 80%;
+  }
+  .wrapper .inside:hover .icon {
+    opacity: 0;
+    right: 15px;
+    top: 15px;
+  }
+  
+  .wrapper .inside:hover .contents {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+  }
+  .inside:hover + .container .face2{
+    height: 20%;
+  }
+  .inside:hover + .container .face2 .details h1{
+    font-size: 20px;
+  }
+  .inside:hover + .container .face2 .details p{
+    display: none;
+  }
+  .inside:hover + .container .face2 .person-img img{
+    display: none;
+  }
+  .wrapper .inside .contents {
+    padding: 5%;
+    opacity: 0;
+    transform: scale(0.5);
+    transform: translateY(-200%);
+    transition: opacity 0.2s, transform 0.8s;
+  }
+  .wrapper .inside .contents table {
+    text-align: left;
+    width: 100%;
+  }
+  .wrapper .inside .contents p{
+    color: white;
+    font-size: 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', Courier, monospace;
+  }    
+  .face{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .face1{
+    box-sizing: border-box;
+  }
+  .face1 img{
+    align-self: center;
+    width: auto;
+    height: 100%;
+    margin: 0;
+  }
+  /* .face2:before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+  } */
+  .face2{
+    background: var(--foreground); /*changes*/
+    transition: 0.5s;
+  }
+  .container:hover .face2{
+    height: 20%;
+  }
+  .container:hover .face2 .details h1{
+    font-size: 20px;
+  }
+  .container:hover .face2 .details p{
+    display: none;
+  }
+  .person-img img{
+    border-radius: 50%;
+    outline: none;
+    transition: fade 0.5s;
+  }
+  .container:hover .face2 .person-img img{
+    display: none;
+  }
+  .details{
+    text-align: center;
+  }
+  .details .acco-head {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: var(--text-color5);/*changes*/
+    transition: 0.5s;
+  }
+  .details p{
+    color: var(--text-color6);/*changes*/
+    margin-bottom: auto;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+  /* .details p span{
+  background-color: rgb(255, 255, 255);
+	padding: 0 5px;
+  margin:5px;
+  } */
