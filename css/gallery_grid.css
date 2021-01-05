@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;900&family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: rgb(10, 8, 8);
+  color: aliceblue;
+}
+main{
+  padding-bottom: 20px;
+}
+.header {
+  text-align: center;
+  padding: 32px;
+}
+.header h1{
+  font-size: 5rem;
+    color: rgb(255, 255, 255);
+    margin: 30px 0;
+    align-items: center;
+    font-family: 'Montserrat', cursive;
+    font-weight: 900;
+    background-color: transparents;
+    width: 100%;
+    text-align: center;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  filter: grayscale(1);
+}
+/*
+.middle-col p{
+  font-size: 2.5rem;
+}*/
+.right-col h2{
+  /*font-size: 2.5rem;*/
+  margin-bottom: 10px;
+  text-align: center;
+}
+.right-col p{
+  margin-bottom: 10px;
+}
+.social-media a{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@keyframes blur-image {
+  0% {
+    filter: grayscale(100%) ;
+  }
+  25% {
+    filter:grayscale(75%) ;
+  }
+  50% {
+    filter: grayscale(50%) ;
+  }
+  100% {
+    filter: grayscale(0%) ;
+  }
+}
+.column img:hover {
+  cursor: pointer;
+  animation-name: blur-image;
+  animation-duration: 0.3s;
+  filter: grayscale(0);
+
+
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 50%;
+    max-width: 100%;
+  }
+  .column img {
+    filter: grayscale(0);
+  }
+}
