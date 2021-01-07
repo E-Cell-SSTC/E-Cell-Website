@@ -13,6 +13,7 @@
 html{
     font-family: 'Times New Roman', Times, serif;
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 /* img{
     width: 100%;
