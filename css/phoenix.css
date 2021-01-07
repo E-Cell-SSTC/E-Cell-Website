@@ -18,7 +18,7 @@ body{
   width: 100%;
   text-align: center;
   font-size: 3rem;
-  font-weight: 900;
+  font-weight: 700;
   font-family: 'Montserrat', Courier, monospace;
   color: #fff;
   text-shadow: 5.5px 5.5px rgb(0, 0, 0);
@@ -34,15 +34,12 @@ body{
 }
  .card__collection {
 	 position: relative;
-	 display: block;
-	 /* background: rgba(10, 10, 10, .5); */
-	 padding: 20px;
+	 display: flex;
+	 justify-content: space-evenly;
+  align-items: center;
+	 margin: 10px;
 	 font-family: 'Raleway', sans-serif;
 	 overflow: hidden;
-	 display: flex;
-  justify-content: center;
-  align-items: center;
-	 
 }
  .card__collection .cards {
 	 width: 300px;
@@ -58,12 +55,10 @@ body{
 }
 .card__collection{
   width: 100%;
-  margin-left: 10em;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; */
 }
 /* .cards:hover .img-responsive{
   filter: blur(50%) opacity(50%);
@@ -102,7 +97,6 @@ body{
 }
  .card__collection .cards--three:hover .cards--three__list li {
 	 transform: translateX(0);
-	 font-size: 18px;
 }
  .card__collection .cards--three__rect-1 {
 	 background: #9e9e9e;
@@ -216,19 +210,16 @@ body{
 	 display: inline-block;
 	 margin: 4px;
 	 color: #fff;
-	 width: 30px;
-	 height: 30px;
+	 width: 25px;
+	 height: 25px;
 	 border-radius: 50%;
 	 background: #3f3f3f;
 	 text-align: center;
 	 line-height: 1.7rem;
-	 font-size: 20px;
+	 font-size: 12px;
 	 transition: all 0.3s ease;
 	 transform: translateX(500%);
 }
- .card__collection .cards--three__list li i{
-	 margin-top:5px;
- }
 .card__collection .cards--three__list li:hover i{
   z-index: 100;
   zoom: 1.1;
@@ -250,8 +241,4 @@ body{
     flex-direction: column;
     align-items: center;
    }
- }
- a{
-	 text-emphasis: none;
-	 color: #fff;
  }
