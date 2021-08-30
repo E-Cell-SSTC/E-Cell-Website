@@ -2,8 +2,7 @@
 <!-- PROJECT LOGO -->
 <!-- <p align="center">
     <img src=" height="200px"  align="center"/>
-
-  <p align="center">
+<p align="center">
     <a href="">Video Demo</a> || <a href="">Live Site</a>
   </p>
 </p> -->
