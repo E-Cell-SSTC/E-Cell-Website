@@ -86,30 +86,35 @@ git checkout -b <your_branch_name>
 **8.** Make necessary changes and commit those changes
 <p align="center"><img width=35% src="https://media2.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif?cid=ecf05e47pzi2rpig0vc8pjusra8hiai1b91zgiywvbubu9vu&rid=giphy.gif"></p>
 
-**9.** Track your changes:heavy_check_mark: .
+**9.** Check your status: .
+'''
+git status
+'''
+
+**10.** Track your changes:heavy_check_mark: .
 ```
-git add . 
+git add .   or   git add file1 file2 file3
 ```
-**10.** Commit your changes .
+**11.** Commit your changes .
 ```
 git commit -m "Relevant message"
 ```
-**11.** Push the committed changes in your feature branch to your remote repo.
+**12.** Push the committed changes in your feature branch to your remote repo.
 ```
 git push -u origin <your_branch_name>
 ```
 
-**12.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
+**13.** To create a pull request, click on `compare and pull requests`. Please ensure you compare your feature branch to the desired branch of the repo you are suppose to make a PR to.
 
 <img src="https://firstcontributions.github.io/assets/Readme/compare-and-pull.png" width=600>
 
-**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+**14.** Add appropriate title and description to your pull request explaining your changes and efforts done.
 
-**14.** Click on `Create Pull Request`.
+**15.** Click on `Create Pull Request`.
 
 <img src="https://firstcontributions.github.io/assets/Readme/submit-pull-request.png" width=600>
 
-**15.** Hurray ! You have created a PR to the E-CELL-WEBSITE . Sit back patiently and relax till then the project maintainers will review your PR. Please understand,  there will be some time taken to review a PR and can vary from a few hours to a few days too so be Patient and keep contributing.
+**16.** Hurray ! You have created a PR to the E-CELL-WEBSITE . Sit back patiently and relax till then the project maintainers will review your PR. Please understand,  there will be some time taken to review a PR and can vary from a few hours to a few days too so be Patient and keep contributing.
 
 <br>
 <h1 align=center> project Admins ❤️ </h1>
