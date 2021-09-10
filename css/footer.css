@@ -17,6 +17,7 @@ footer{
     justify-content: space-between;
     align-items: stretch;
     flex-wrap: nowrap;
+    padding-left: 50px;
   }
   .left-col{
     margin-left: 35px;
