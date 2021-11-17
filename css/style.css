@@ -24,6 +24,7 @@ html,body{
     transition: all 1s ease;
     scroll-behavior: smooth;
     overflow-x: hidden; 
+    /* overflow-x: hidden;  */
 }
 body.light
 {
