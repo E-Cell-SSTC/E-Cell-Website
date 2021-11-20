@@ -23,6 +23,7 @@ html,body{
     background-color: var(--background);
     transition: all 1s ease;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 body.light
 {
@@ -85,7 +86,7 @@ section p{
 	line-height: 20px;
 	color:var(--text-color2);
 }
-section#home .logo
+section #home .logo
 {
     border-radius: 100%;
 }

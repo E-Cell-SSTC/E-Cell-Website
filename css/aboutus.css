@@ -11,6 +11,8 @@
     text-align: center;
     font-family: 'Raleway', Courier, monospace;
     color: var(--text-color4);
+    margin-left: 4.3Rem;
+	margin-right: 4.3rem;
 }
 .team-link{
 	margin-bottom: 30px;
