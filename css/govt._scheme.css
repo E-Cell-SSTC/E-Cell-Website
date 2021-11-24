@@ -22,7 +22,8 @@ width:100%;  }
 	position:relative; 
 	color:gray;
     box-shadow:2px 2px 9px silver; 
-	margin:30px;}
+	margin:30px;
+border-radius: 20px;}
 
 .contenido { 
 width:100%; 
@@ -46,7 +47,7 @@ top:0px;
 background: var(--foreground);/*changes*/  
 transition:0.7s; 
 max-height:300px; 
-opacity:0.9; }
+opacity:0.92; }
 
 .texto { 
 box-shadow:2px 2px 9px silver; 
@@ -57,6 +58,8 @@ overflow:auto;
     padding:2% 2%;
     width: 100%;
    visibility:hidden;
+border-radius: 20px;
+   height: 115%;
  }
 .texto p {  padding:2%;
 color: var(--text-color4); 
