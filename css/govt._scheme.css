@@ -55,11 +55,12 @@ overflow:auto;
     position:absolute; 
 	right:10px;
     font-size: 0.7em;
-    padding:2% 2%;
     width: 100%;
    visibility:hidden;
 border-radius: 20px;
-   height: 115%;
+   height: 100%;
+   margin-top: -5px;
+   margin-right: -11px;
  }
 .texto p {  padding:2%;
 color: var(--text-color4); 
