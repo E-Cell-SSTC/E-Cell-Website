@@ -44,7 +44,8 @@
     width: 100%;
     max-width: 100px;
     height: auto;
-  
+    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
+     filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.5));
   }
   .text-content {
     display: flex;
