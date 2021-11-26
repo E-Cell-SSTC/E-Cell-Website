@@ -87,7 +87,7 @@ color: var(--text-color1);/*changes*/
   width: 128px;
 }
 .size_change{
-  height: 175px;
+  height: 183px;
 }
   @media (min-width:768px)  {
 	  .texto { max-height:320px;}
