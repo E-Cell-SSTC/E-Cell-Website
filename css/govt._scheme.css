@@ -86,7 +86,9 @@ color: var(--text-color1);/*changes*/
 {
   width: 128px;
 }
-
+.size_change{
+  height: 175px;
+}
   @media (min-width:768px)  {
 	  .texto { max-height:320px;}
 	  .tarjeta  { width:40%; max-height:350px;  }
