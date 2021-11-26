@@ -51,7 +51,7 @@ opacity:0.92; }
 
 .texto { 
 box-shadow:2px 2px 9px silver; 
-overflow:auto; 
+overflow:hidden; 
     position:absolute; 
 	right:10px;
     font-size: 0.7em;
