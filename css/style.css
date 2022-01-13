@@ -115,6 +115,3 @@ section #home .logo
     -webkit-filter: drop-shadow( 2px 2px 2px rgb(255, 255, 255));
     filter: drop-shadow(2px 2px 2px 2px rgb(255, 255, 255));
 }
-.discordlogo:hover{
-    transform: rotateY(360deg);
-}
