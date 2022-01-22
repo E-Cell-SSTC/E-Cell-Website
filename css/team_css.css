@@ -1,6 +1,6 @@
-body{
-  background-color: var(--background);/*changes*/
-  margin:0;
+body {
+  background-color: var(--background); /*changes*/
+  margin: 0;
 }
 
 .section-head {
@@ -10,7 +10,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  color:white;
+  color: white;
   overflow: hidden;
 }
 .section-head::before {
@@ -37,19 +37,19 @@ body{
 .section-head .content h1 {
   margin: 0;
   padding: 0;
-  background-color: var(--text-color1);/*changes*/
+  background-color: var(--text-color1); /*changes*/
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   font-size: 5em;
 }
-.section-head .content cite{
+.section-head .content cite {
   color: var(--text-color4);
 }
 .section-head .content p {
-  color: var(--text-color2);/*changes*/
+  color: var(--text-color2); /*changes*/
   font-size: 1.2em;
 }
-.faculty{
+.faculty {
   padding-top: 1em;
 }
 /* team heading */
@@ -58,183 +58,248 @@ body{
   margin-top: 50px;
   font-family: "Recursive", sans-serif;
   font-size: 2em;
-  color: var(--text-color1);/*changes*/
+  color: var(--text-color1); /*changes*/
   text-shadow: 5.5px 5.5px rgb(0, 0, 0);
 }
-  .row{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      flex-wrap: wrap;
-  }
-
-  .our-team {
-    padding: 30px 0 40px;
-    margin: 30px;
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 250px;
-    max-height: 250px;
-    /*background: linear-gradient(90deg,rgb(142, 141, 141),rgb(234, 234, 234),rgb(142, 141, 141));
-    */
-	background: var(--background);
-	text-align: center;
-    overflow: hidden;
-    position: relative;
-    box-shadow: -3px -3px 20px 0 rgb(0, 0, 0),
-    -3px -3px 20px 0 rgb(0, 0, 0);
-    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) .5s;
-    border-radius: 5%;
-  }
-
-  .our-team:hover{
-    transform: scale(1.08);
-  }
-  /* Only for Dhirendra and Khushboo's Card */
-  .big-name{
-    padding: 30px 0 40px;
-    margin: 30px;
-    max-width: 250px;
-    max-height: 250px;
-    /*background: linear-gradient(90deg,rgb(142, 141, 141),rgb(234, 234, 234),rgb(142, 141, 141));
-    */
-	background: var(--background);
-	text-align: center;
-    overflow: hidden;
-    position: relative;
-    box-shadow: -3px -3px 20px 0 rgb(0, 0, 0),
-    -3px -3px 20px 0 rgb(0, 0, 0);
-    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) .5s;
-  }
-
-  .name{
-    font-size: 1.38em;
-    color: var(--text-color2);
-  }
-
-  .team-content{
-    margin-top: -3em;
-  }
-  .our-team .picture {
-    display: inline-block;
-    height: 130px;
-    width: 130px;
-    margin-bottom: 50px;
-    z-index: 1;
-    position: relative;
-  }
-  
-  .our-team .picture::before {
-    content: "";
-    width: 100%;
-    height: 0;
-    border-radius: 50%;
-    background-color: var(--graphic-color1);
-    position: absolute;
-    bottom: 135%;
-    right: 0;
-    left: 0;
-    opacity: 0.9;
-    transform: scale(3);
-    transition: all 0.3s linear 0s;
-  }
-  
-  .our-team:hover .picture::before {
-    height: 100%;
-  }
-  
-  .our-team .picture::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: var(--graphic-color1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
-  .our-team .picture img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transform: scale(1);
-    transition: all 0.9s ease 0s;
-  }
-  
-  .our-team:hover .picture img {
-    box-shadow: 0 0 0 14px var(--text-color1);
-    transform: scale(0.7);
-  }
-  
-  .our-team .tenure {
-    display: block;
-    font-size: 1.05em;
-    color: var(--text-color2);
-    text-transform: capitalize;
-  }
-
-  .big-tenure{
-  margin-top: -.7em;
-  }
-  .our-team .social {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    background-color: var(--graphic-color1);
-    position: absolute;
-    bottom: -100px;
-    left: 0;
-    transition: all 0.5s ease 0s;
-  }
-  
-  .our-team:hover .social {
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
-  .space{
-    opacity: 0;
-    font-size: 30px;
-  }
-  
-  .our-team .social li {
-    display: inline-block;
-  }
-  .space{
-    opacity: 0;
-  }
-  .our-team .social li a {
-    display: block;
-    padding: 10px;
-    font-size: 20px;
-    color: white;
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-  }
-  
-  .our-team .social li a:hover {
-    color: var(--graphic-color1);
-    background-color: #f7f5ec;
-  }
-
-  /* MOBILE VIEW */
-@media only screen and (max-width: 600px){
-  .section-head {
-  height: 50vh;
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.section-head .content h1 {
-  font-size: 3.5em;
+
+.team-detail {
+  box-shadow: -3px -3px 5px 0 rgb(219, 182, 126),
+    -3px -3px 14px 0 rgb(219, 182, 126);
+  color: rgb(137, 228, 235);
+  /* color: rgb(219, 182, 126);
+    color: rgb(255, 255, 255); */
+  /* transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) .5s; */
+  border: 1px solid black;
+  border-radius: 40px;
+  padding: 2% 10% 2%;
+  margin-top: 12%;
+  width: 40vw;
+  font-size: 1.1rem;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
-.section-head .content p {
+.team-detail:hover{
+  box-shadow: -3px -3px 9px 0 rgb(250, 189, 98),
+  -3px -3px 20px 0 rgb(194, 135, 46);
+}
+
+.our-team {
+  padding: 30px 0 40px;
+  margin: 30px;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 250px;
+  max-height: 250px;
+  /*background: linear-gradient(90deg,rgb(142, 141, 141),rgb(234, 234, 234),rgb(142, 141, 141));
+    */
+  background: var(--background);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: -3px -3px 20px 0 rgb(0, 0, 0), -3px -3px 20px 0 rgb(0, 0, 0);
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+  border-radius: 5%;
+}
+
+.our-team:hover {
+  transform: scale(1.08);
+}
+/* Only for Dhirendra and Khushboo's Card */
+.big-name {
+  padding: 30px 0 40px;
+  margin: 30px;
+  max-width: 250px;
+  max-height: 250px;
+  /*background: linear-gradient(90deg,rgb(142, 141, 141),rgb(234, 234, 234),rgb(142, 141, 141));
+    */
+  background: var(--background);
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  box-shadow: -3px -3px 20px 0 rgb(0, 0, 0), -3px -3px 20px 0 rgb(0, 0, 0);
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) 0.5s;
+}
+
+.name {
+  font-size: 1.38em;
   color: var(--text-color2);
-  font-size: 1em;
 }
-.team-heading {
-  font-size: 1.4em;
+
+.team-content {
+  margin-top: -3em;
 }
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 130px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: var(--graphic-color1);
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--graphic-color1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px var(--text-color1);
+  transform: scale(0.7);
+}
+
+.our-team .tenure {
+  display: block;
+  font-size: 1.05em;
+  color: var(--text-color2);
+  text-transform: capitalize;
+}
+
+.big-tenure {
+  margin-top: -0.7em;
+}
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: var(--graphic-color1);
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.space {
+  opacity: 0;
+  font-size: 30px;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+.space {
+  opacity: 0;
+}
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: var(--graphic-color1);
+  background-color: #f7f5ec;
+}
+
+.btn_nxtPage{
+  width: 150px;
+  height: 50px;
+  border: none;
+  color: rgb(219 182 126);
+  background-color: var(--background);
+  border-radius: 30px;
+  transition: ease-out 0.3s;
+  font-size: 1rem;
+  outline: none;
+  border: 3px solid rgb(219 182 126);
+  position: relative;
+  z-index: 1;
+  margin-bottom: 6rem;
+}
+
+.btn_nxtPage:hover{
+  color: white;
+  cursor: pointer;
+}
+.btn_nxtPage::before{
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #1d77d5;
+  border: 3px solid #1d77d5;
+  border-radius: 30px;
+}
+.btn_nxtPage:hover::before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* MOBILE VIEW */
+@media only screen and (max-width: 600px) {
+  .section-head {
+    height: 50vh;
+  }
+  .section-head .content h1 {
+    font-size: 3.5em;
+  }
+  .section-head .content p {
+    color: var(--text-color2);
+    font-size: 1em;
+  }
+  .team-heading {
+    font-size: 1.4em;
+  }
+
+  .team-detail {
+    margin-top: 25%;
+  }
 }
