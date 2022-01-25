@@ -76,9 +76,9 @@ body {
   /* transition: cubic-bezier(0.6, -0.28, 0.735, 0.045) .5s; */
   border: 1px solid black;
   border-radius: 40px;
-  padding: 2% 10% 2%;
-  margin-top: 12%;
-  width: 40vw;
+  padding: 2% 2%;
+  margin-top: 10%;
+  width: 85vw;
   font-size: 1.1rem;
   position: relative;
   left: 50%;
@@ -285,7 +285,7 @@ body {
 
 @media only screen and (max-width: 800px) {
   .team-detail {
-    margin-top: 20%;
+    margin-top: 15%;
   }
 }
 
@@ -303,14 +303,15 @@ body {
   .team-heading {
     font-size: 1.4em;
   }
-
+  
   .team-detail {
-    margin-top: 55%;
+    font-size: 0.9rem;
+    margin-top: 20%;
   }
 }
 
 @media only screen and (max-width: 300px) {
   .team-detail {
-    margin-top: 85%;
+    margin-top: 45%;
   }
 }
