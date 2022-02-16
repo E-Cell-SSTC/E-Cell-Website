@@ -1,0 +1,17 @@
+
+button{
+   
+    background:transparent;
+    border-color: turquoise;
+    color: turquoise;
+     font-size: 30px;
+    font-family: 'Barlow',Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: 1s;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow:  0 20px 100px 0 turquoise;
+    transition: 2s;
+}
