@@ -1,17 +1,28 @@
 
+a{
+    position:static;
+    padding: 10px 10px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 button{
-   
+    
     background:transparent;
     border-color: turquoise;
-    color: turquoise;
-     font-size: 30px;
-    font-family: 'Barlow',Arial, Helvetica, sans-serif;
-    font-weight: 500;
     border-radius: 4px;
     transition: 1s;
+    color: turquoise;
+    font-family: 'Barlow',Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+  
+    
 }
+
 button:hover{
     cursor: pointer;
     box-shadow:  0 20px 100px 0 turquoise;
     transition: 2s;
+    
 }
+
