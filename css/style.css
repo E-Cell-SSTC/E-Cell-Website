@@ -134,3 +134,45 @@ buttn{
     padding-bottom: 3px;
     
 }
+ /* CSS for event section for toggle button */
+ .toggle1,
+ .toggle2 {
+   padding: 1rem;
+   font-size: xx-large;
+   border: 3px solid black;
+   cursor: pointer;
+ }
+ .toggleflex {
+   justify-content: center;
+   display: flex;
+ }
+ .radius1 {
+   border-radius: 20px 00px 00px 20px;
+ }
+ .radius2 {
+   border-radius: 00px 20px 20px 00px;
+ }
+ .toggle2 {
+   background-color: black;
+   color: white;
+ }
+ .toggle1 {
+   background-color: white;
+   color: black;
+ }
+ .cc_W_B {
+   background-color: black;
+   color: white;
+ }
+ .cc_b_w {
+   background-color: white;
+   color: black;
+ }
+ .newcss {
+   visibility: hidden;
+   position: absolute;
+ }
+ .oldcss {
+   visibility: visible;
+   position: static;
+ }
