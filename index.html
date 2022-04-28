@@ -161,7 +161,35 @@
       <!-- event section  -->
 
       <section id="event-section">
-        <h2 class="sec-head">EVENTS ORGANISED</h2>
+        <h2 class="sec-head">EVENTS</h2>
+        <!-- Event Buttons -->
+        <div class="toggleflex">
+          <h1 class="toggle1 radius1" id="w_b" onclick="hello()">ORGANISED </h1>
+          <h1 class="toggle2 radius2" id="b_w" onclick="hello()">UPCOMING</h1>
+        </div>
+        <!-- Upcoming Cards -->
+        <div class="newcss" id="organised">
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="#">
+                  <div class="imgBx">
+                    <img
+                      src="./images/CommingSoonCardIMG.jpg" />
+                  </div>
+                  <div class="details">
+                    <h3>Comming Soon<br />2022</h3>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+
+        <!-- Organised Cards -->
+      <div id="upcoming">
         <div class="swiper-container" id="event">
 
           <!-- <div class="swiper-slide">
@@ -295,6 +323,8 @@
             </div>
           </div>
         </div>
+      </div>
+
 
         <div class="gallery-link">
           <a href="src/event-section.html"><span>SEE MORE<i class="fas fa-chevron-right"></i></span></a>
@@ -971,6 +1001,26 @@ E-CELL MAGAZINE
     </main>
 <!--	<script src="script/newsletter.js"></script>-->
   <script>
+function hi() {
+      console.log("Button Clicked - UPCOMING")
+      var w1 = document.getElementById('upcoming');
+      w1.classList.toggle('newcss');
+      changecolor();
+    }
+    function hello() {
+      console.log("Button Clicked - ORGANISED");
+      var w2 = document.getElementById('organised');
+      w2.classList.toggle('oldcss');
+      hi();
+    }
+    function changecolor() {
+      console.log("Color changed");
+      var w3 = document.getElementById('w_b');
+      w3.classList.toggle('cc_W_B');
+      var w4 = document.getElementById('b_w');
+      w4.classList.toggle('cc_b_w');
+    }
+
 var preloader=document.getElementById('loading');
 function loadfun()
 {
